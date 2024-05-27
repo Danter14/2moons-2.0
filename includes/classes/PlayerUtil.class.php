@@ -33,7 +33,7 @@ class PlayerUtil
 	static public function isPositionFree($universe, $galaxy, $system, $position, $type = 1)
 	{
 		$db = Database::get();
-		$sql = "SELECT COUNT(*) as record
+		$sql = "SELECT COUNT(*) as `record`
 		FROM %%PLANETS%%
 		WHERE universe = :universe
 		AND galaxy = :galaxy
