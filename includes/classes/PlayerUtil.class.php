@@ -619,7 +619,7 @@ class PlayerUtil
 			':type'		=> $messageType,
 			':from'		=> $senderName,
 			':subject'	=> $subject,
-			':text'		=> $text,
+			':text'		=> utf8_encode($text),
 			':unread'	=> $unread,
 			':universe'	=> $universe,
 		));
